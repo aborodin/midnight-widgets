@@ -75,10 +75,12 @@ mc_rect_move (mc_rect_t * r, gssize dx, gssize dy)
 }
 
 static inline void
-mc_rect_resize (mc_rect_t * r, gssize dw, gssize dh)
+mc_rect_grow (mc_rect_t * r, gssize dw, gssize dh)
 {
-    r->w += dw;
-    r->h += dh;
+    r->x -= dw;
+    r->y -= dh;
+    r->w = (gsize) ((gssize) r->w + dw);
+    r->h = (gsize) ((gssize) r->h + dh);
 }
 
 static inline void
