@@ -36,7 +36,7 @@ G_BEGIN_DECLS
 
 /*** structures declarations (and typedefs of structures) ****************************************/
 
-typedef _mc_rect_t mc_rect_t;
+typedef struct _mc_rect_t mc_rect_t;
 
 struct _mc_rect_t
 {
