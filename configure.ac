@@ -4,7 +4,7 @@ dnl
 
 AC_INIT([GNU Mignight Commander], [], [mc-devel@gnome.org])
 AC_PREREQ(2.60)
-AC_CONFIG_SRCDIR([lib/widgets/widget.c])
+AC_CONFIG_SRCDIR([src/widget-group-debug.c])
 AC_CONFIG_MACRO_DIR([m4])
 AM_INIT_AUTOMAKE([mc], [0.0.1])
 
@@ -94,6 +94,8 @@ Makefile
 
 lib/Makefile
 lib/widgets/Makefile
+
+src/Makefile
 ])
 
 if test x$enable_tests != xno; then
